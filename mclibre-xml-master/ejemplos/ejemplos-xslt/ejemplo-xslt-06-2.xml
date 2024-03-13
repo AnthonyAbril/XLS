@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ejemplo-xslt-06-2.xsl"?>
+<licencias>
+  <licencia>
+    <nombre>Creative Commons By - Share Alike</nombre>
+    <imagen>cc-bysa-88x31.png</imagen>
+  </licencia>
+</licencias>

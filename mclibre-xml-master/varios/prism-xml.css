@@ -1,0 +1,61 @@
+/* PRISM.CSS
+   Bartolomé Sintes Marco
+   https://www.mclibre.org
+
+   Hoja de estilo para prism.js
+
+   21 de abril de 2018
+*/
+
+/* Los estilos para trozos sueltos están en la hoja de estilo de los apuntes */
+
+/* Estilo para XML imitando a XML Copy Editor */
+/* Tengo pendiente comprobar los nombres de las clases en prism */
+
+code.language-xml { }
+code.xml-malformado, code.xml-invalido { }
+
+code.language-xml .attr-name   { color: #FC0204; } /* tag's attribute with or without value  */
+code.language-xml .attr-value  { color: #000000; } /* attribute's value                      */
+code.language-xml .cdata       { color: #FF0000; } /* CDATA section                          */
+code.language-xml .comment     { color: #808080; } /* comment                                */
+code.language-xml .doctype     { color: #0000FF; } /* <!DOCTYPE ... > declaration            */
+code.language-xml .pi          { color: #0000FF; } /* processing instruction (<? ... ?>)     */
+code.language-xml .prolog      { color: #0000FF; } /* processing instruction (<? ... ?>)     */
+code.language-xml .punctuation { color: #446FBD; } /*                                        */
+code.language-xml .tag         { color: #0000FF; } /* any tag from "<" till ">"              */
+
+/* Estilo para CSS imitando a XML Copy Editor */
+/* Todvía no pasado a Prism del todo */
+
+code.language-css { _font-weight: bold; _font-size: 115%; _line-height: 120%;}
+
+code.language-css .selector           { color: #446FBD; }          /* tag in selectors                   */
+code.language-css .hljs-id            { color: #446FBD; }          /* #some_name in selectors            */
+code.language-css .hljs-class         { color: #446FBD; }          /* .some_name in selectors            */
+code.language-css .hljs-at_rule       { color: #8757AD; }          /* @-rule till first "{" or ";"       */
+code.language-css .hljs-attr_selector { color: rgb( 63,127,127); } /* attribute selector ([])            */
+code.language-css .hljs-pseudo        { color: #535353; }          /* pseudo classes/elements            */
+code.language-css .hljs-comment       { color: #535353; }          /* comment                            */
+code.language-css .hljs-rules         { color: #000000; }          /* everything from "{" till "}"       */
+code.language-css .property           { color: #8757AD; }          /* property name inside a rule        */
+code.language-css .hljs-value         { color: #E88501; }          /* property value inside a rule       */
+code.language-css .hljs-number        { color: #6D8600; }          /* number within a value              */
+code.language-css .hljs-string        { color: #E88501; }          /* string within a value              */
+code.language-css .hljs-hexcolor      { color: #E88501; }          /* hex color (#FFFFFF) within a value */
+code.language-css .hljs-function      { color: rgb( 42,  0,255); } /* CSS function within a value        */
+code.language-css .hljs-important     { color: rgb( 63,127,127); } /* "!important" symbol                */
+
+/* Estilo para HTML imitando a Visual Studio Code con tema Light+ */
+
+code.language-html { }
+pre code.language-html .attr-name      { color: #FF0000; }          /* attribute name            */
+pre code.language-html .attr-value     { color: #0000FF; }          /* attribute value           */
+pre code.language-html .cdata          { }                            /* cdata                     */
+pre code.language-html .comment        { color: #008000; }          /* comment                   */
+pre code.language-html .doctype        { color: #000000; }          /* doctype                   */
+pre code.language-html .entity         { }                            /* entity                    */
+pre code.language-html .namespace      { }                            /* namespace                 */
+pre code.language-html .prolog         { }                            /* prolog                    */
+pre code.language-html .punctuation    { color: #000000; }          /* punctuation               */
+pre code.language-html .tag            { color: #911F00; }          /* Tags, attributes, configs */
