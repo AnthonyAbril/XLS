@@ -13,14 +13,14 @@
 
     <xsl:template match="ciudad">
         <xsl:choose>
-            <xsl:when test="@a>1">
-                <p>Primer</p>
+            <xsl:when test="nombre='Madrid'">
+                <p>Esta Madrid</p>
             </xsl:when>
-            <xsl:when test="@a=2">
-                <p>Segundo</p>
+            <xsl:when test="nombre='Málaga'">
+                <p>Esta Malaga</p>
             </xsl:when>
             <xsl:otherwise>
-                <p>Tercer</p>
+                <p>No coincide</p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
