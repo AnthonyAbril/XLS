@@ -6,7 +6,7 @@
                 <title>Ejemplo XSLT</title>
             </head>
             <body>
-                <xsl:apply-templates />
+                <xsl:apply-templates select="//ciudad"/>
             </body>
         </html>
     </xsl:template>
