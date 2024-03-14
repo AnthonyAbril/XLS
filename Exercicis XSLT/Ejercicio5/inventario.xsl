@@ -6,21 +6,24 @@
                 <title>Inventario</title>
             </head>
             <body>
-                <ul>
-                    <xsl:apply-templates select="//producto"/>
-                </ul>
+                <table border="1">
+                    <tbody>
+                        <xsl:apply-templates select="//producto"/>
+                    </tbody>
+                </table>
             </body>    
         </html>
     </xsl:template>
 
     <xsl:template match="producto">
-        <xsl:if test="lugar/@edificio='B'">
-            <li>Elemento <xsl:value-of select="@codigo"/>
-                <ul>
-                    <li>Nombre: <xsl:value-of select="nombre"/></li>
-                    <li>Peso:<xsl:value-of select="peso"/><xsl:value-of select="peso/@unidad"/></li>
-                </ul>
-            </li>
-        </xsl:if>
+        <tr>
+            <td><xsl:value-of select="nombre"/></td>
+            <td>
+                <xsl:value-of select="peso"/>
+            </td>
+            <td>
+                <xsl:value-of select="lugar/aula"/><xsl:value-of select="lugar/@edificio"/>
+            </td>
+        </tr>
     </xsl:template>
 </xsl:stylesheet>

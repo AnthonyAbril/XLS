@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+	    <link rel="stylesheet" type="text/css" href="inventario.css" title="style">
         <title>Inventario</title>
     </head>
     <body>
-        <ul>
-            <li>Elemento P1
-                <ul>
-                    <li>Nombre: Ordenador</li>
-                    <li>Pero:10kg</li>
-                </ul>
-            </li>
-            <li>Elemento P2
-                <ul>
-                    <li>Nombre: Switch</li>
-                    <li>Peso:500g</li>
-                </ul>
-            </li>
-        </ul>
+        <p>a</p>
+        <table border="1">
+            <tbody>
+                <xsl:for-each select="producto">
+                    <tr>
+                        <td><xsl:value-of select="nombre"/></td>
+                        <td>
+                            <xsl:value-of select="peso"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="lugar/aula"/><xsl:value-of select="lugar/@edificio"/>
+                        </td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        </table>
     </body>    
 </html>
