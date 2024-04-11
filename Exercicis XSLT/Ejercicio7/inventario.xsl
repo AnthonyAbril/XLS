@@ -13,18 +13,14 @@
                         <tr>
                             <th colspan="100">Inventario</th>
                         </tr>
-                        <xsl:apply-templates select="//producto"/>
+                        <xsl:for-each select="//producto[lugar/aula='6']">
+                            <tr>
+                                <td><xsl:value-of select="nombre"/></td>
+                            </tr>
+                        </xsl:for-each>
                     </tbody>
                 </table>
             </body>
         </html>
-    </xsl:template>
-
-    <xsl:template match="producto">
-        <xsl:if test="lugar/aula='6'">    
-            <tr>
-                <td><xsl:value-of select="nombre"/></td>
-            </tr>
-        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
