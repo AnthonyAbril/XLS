@@ -3,7 +3,7 @@
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
         <inventario>
-            <xsl:copy-of select="//producto[lugar/@edificio='A' and lugar/aula=6]" />
+            <xsl:copy-of select="//producto[lugar/@edificio='A' and lugar/aula='6']" />
         </inventario>
     </xsl:template>
 </xsl:stylesheet>

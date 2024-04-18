@@ -15,4 +15,11 @@
             <aula>6</aula>
         </lugar>
     </producto>
+    <producto codigo="P2">
+        <peso unidad='kg'>15</peso>
+        <nombre>Mesa</nombre>
+        <lugar edificio="B">
+            <aula>6</aula>
+        </lugar>
+    </producto>
 </inventario>

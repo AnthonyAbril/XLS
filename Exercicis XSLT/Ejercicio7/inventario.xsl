@@ -8,15 +8,13 @@
                 <link rel="stylesheet" href="inventario.css"/>
             </head>
             <body>
-                <table border="1">
+                <table border='1'>
                     <tbody>
                         <tr>
                             <th colspan="100">Inventario</th>
                         </tr>
                         <xsl:for-each select="//producto[lugar/aula='6']">
-                            <tr>
-                                <td><xsl:value-of select="nombre"/></td>
-                            </tr>
+                            <tr> <td><xsl:value-of select="nombre"/></td> </tr>
                         </xsl:for-each>
                     </tbody>
                 </table>

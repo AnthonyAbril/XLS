@@ -14,7 +14,7 @@
     </xsl:template>
 
     <xsl:template match="producto">
-        <xsl:if test="peso&gt;6 and peso/@unidad='kg' or peso&gt;6999 and peso/@unidad='g'">
+        <xsl:if test="(peso>=7 and peso/@unidad='kg') or (peso>=7000 and peso/@unidad='g')">
             <li>Elemento <xsl:value-of select="@codigo"/>
                 <ul>
                     <li>Nombre: <xsl:value-of select="nombre"/></li>

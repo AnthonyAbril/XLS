@@ -1,0 +1,16 @@
+table , td, th{
+    margin: 5px;
+    border: solid black 1px;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: aqua;
+}
+
+#rojo {
+    background-color: red;
+}

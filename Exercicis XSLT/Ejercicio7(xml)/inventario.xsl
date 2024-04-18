@@ -3,7 +3,11 @@
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
         <inventario>
-            <xsl:copy-of select="//producto[lugar/aula='6']" />
+            <xsl:for-each select="//producto[lugar/aula='6']">
+                <producto>
+                    <xsl:copy-of select="nombre"/>
+                </producto>
+            </xsl:for-each>
         </inventario>
     </xsl:template>
 </xsl:stylesheet>

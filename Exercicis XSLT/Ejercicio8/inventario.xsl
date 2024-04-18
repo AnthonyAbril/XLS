@@ -8,7 +8,7 @@
                 <link rel="stylesheet" href="inventario.css"/>
             </head>
             <body>
-                <table border="1">
+                <table>
                     <tbody>
                         <tr>
                             <th colspan="100">Inventario</th>
